@@ -7,5 +7,5 @@ services:
       dockerfile: Dockerfile
     ports:
       - "80:80"
-    volumes:
-      - .:/voice
+    env_file:
+      - .env
